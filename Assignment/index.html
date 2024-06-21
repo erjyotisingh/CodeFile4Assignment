@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="logo">VENIA</span>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <div class="nav-links">
+                <a href="#" id="home-link">Home</a>
+                <a href="#" id="women-link">Women</a>
+                <a href="#" id="men-link">Men</a>
+                <a href="#" id="smartgear-link">Smart Gear</a>
+                <a href="#" id="accessories-link">Accessories</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search...">
+                <button id="search-btn">Search</button>
+            </div>
+            <div class="cart">
+                <img class="cart_icon" src="/assets/shopping-cart_icon.png" alt="Shopping Cart">
+                <span class="cart-count">10</span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="flyer">Welcome to our store!</div>
+        <div class="content">
+            <aside class="sidebar">
+                <!-- Navigation -->
+                <nav id="breadcrumb">
+                    <a href="#">Home</a> /
+                    <a href="#">Products</a> /
+                    <span>All</span>
+                </nav>
+                
+                <h2>Filter</h2>
+                <hr>
+                <label><input type="checkbox" name="category" value="jewelery" id="jewelry-filter"> Jewelry</label>
+                <label><input type="checkbox" name="category" value="electronics" id="electronics-filter"> Electronics</label>
+                <label><input type="checkbox" name="category" value="men's clothing" id="mens-clothing-filter"> Men's Clothing</label>
+                <label><input type="checkbox" name="category" value="women's clothing" id="womens-clothing-filter"> Women's Clothing</label>
+                <hr>
+            </aside>
+            <section class="product-section">
+                <div class="product-header">
+                    <span id="results-count">38 Results</span>
+                    <select id="sort" class="sort-select">
+                        <option value="default">Sort By</option>
+                        <option value="priceLowHigh">Price: Low to High</option>
+                        <option value="priceHighLow">Price: High to Low</option>
+                    </select>
+                </div>
+                <div id="productList" class="product-list">
+                    <!-- Product items dynamically loaded -->
+                </div>
+                <button id="loadMore">Load More</button>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <div class="footer-sections">
+            <div class="footer-section">
+                <strong>Account</strong>
+                <ul>
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Order Status</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <strong>About Us</strong>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <strong>Help</strong>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <strong>Follow Us!</strong>
+                <ul>
+                    <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dicta saepe doloremque dignissimos quibusdam sed excepturi in laborum eum non, dolore rem possimus, itaque deserunt voluptas iste? Ad, alias fugit?</a></li>
+                    <li class="social-media_icon"><a href="#"><img src="/assets/instagram_icon.png" alt="Instagram"></a></li>
+                    <li class="social-media_icon"><a href="#"><img src="/assets/facebook_icon.png" alt="Facebook"></a></li>
+                    <li class="social-media_icon"><a href="#"><img src="/assets/twitter_icon.png" alt="Twitter"></a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <span class="footer-logo">VENIA</span>
+            <span class="footer-address">@Company Name Address Ave, City Name, State ZIP</span>
+            <span class="footer-terms"><a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></span>
+        </div>
+    </footer>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
